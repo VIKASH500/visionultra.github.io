@@ -1,34 +1,56 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-export default function Technology(){
+const features = [
+  {
+    name: 'Speech-to-Text',
+    description: 'Our advanced speech-to-text engine provides real-time, low-latency transcription of spoken language. The text is displayed discreetly within the user\'s field of view, allowing for seamless conversation and comprehension in any environment.',
+    imageUrl: 'https://images.unsplash.com/photo-1593697821028-76658a485487?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+  },
+  {
+    name: 'Sign Recognition',
+    description: 'Using a state-of-the-art on-device machine learning model, our goggles can recognize sign language in real-time and translate it into audible speech or text. This feature empowers the deaf and hard of hearing to communicate effortlessly with the world around them.',
+    imageUrl: 'https://images.unsplash.com/photo-1611705490935-5a8bce59a492?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+  },
+  {
+    name: 'Augmented Perception',
+    description: 'For users with visual impairments, our augmented perception technology provides contextual object detection and navigation cues. The goggles identify objects in the environment and provide audio feedback, enhancing spatial awareness and safety.',
+    imageUrl: 'https://images.unsplash.com/photo-1526374965328-5f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+  },
+];
+
+export default function Technology() {
   return (
-    <div className="space-y-6">
+    <div className="bg-white py-24">
       <Helmet>
-        <title>Technology — VisionUltra</title>
-        <meta name="description" content="Learn about VisionUltra's AR, VR and ML features: speech-to-text, sign recognition and augmented perception." />
+        <title>Our Technology — VIGUX</title>
+        <meta name="description" content="Learn about the innovative technology behind VIGUX\'s Vision AI Goggles." />
       </Helmet>
 
-      <h1 className="text-3xl font-bold">Technology</h1>
-      <p className="text-slate-700 dark:text-slate-900 mt-2">Our AI Smart Glasses blend on-device ML for sign recognition, real-time speech-to-text, and AR overlays that provide situational context for low-vision users.</p>
+      <div className="container mx-auto px-6">
+        <div className="text-center">
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
+            The Technology Behind Our Vision
+          </h1>
+          <p className="mt-6 max-w-3xl mx-auto text-xl text-slate-600">
+            We leverage cutting-edge advancements in AR, VR, and AI to create a truly transformative experience.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="glass p-4 rounded">
-          <img src="https://via.placeholder.com/300x200.png?text=Speech+to+Text" alt="Speech to text" className="w-full h-auto rounded-t-lg"/>
-          <h3 className="font-semibold">Speech-to-Text</h3>
-          <p className="text-sm text-slate-600 dark:text-slate-900 mt-2">Low-latency transcription shown in the user's field of view.</p>
-        </div>
-        <div className="glass p-4 rounded">
-          <img src="https://via.placeholder.com/300x200.png?text=Sign+Recognition" alt="Sign recognition" className="w-full h-auto rounded-t-lg"/>
-          <h3 className="font-semibold">Sign Recognition</h3>
-          <p className="text-sm text-slate-600 dark:text-slate-900 mt-2">Real-time sign language recognition converted to audio or text.</p>
-        </div>
-        <div className="glass p-4 rounded">
-          <img src="https://via.placeholder.com/300x200.png?text=Augmented+Perception" alt="Augmented perception" className="w-full h-auto rounded-t-lg"/>
-          <h3 className="font-semibold">Augmented Perception</h3>
-          <p className="text-sm text-slate-600 dark:text-slate-900 mt-2">Contextual object detection and navigation cues for blind users.</p>
+        <div className="mt-20 space-y-20">
+          {features.map((feature, index) => (
+            <div key={feature.name} className={`flex flex-col md:flex-row items-center gap-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+              <div className="md:w-1/2">
+                <img src={feature.imageUrl} alt={feature.name} className="rounded-lg shadow-lg" />
+              </div>
+              <div className="md:w-1/2">
+                <h2 className="text-3xl font-extrabold text-slate-900">{feature.name}</h2>
+                <p className="mt-4 text-lg text-slate-600">{feature.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  )
+  );
 }

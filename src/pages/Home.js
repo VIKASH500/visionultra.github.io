@@ -1,26 +1,50 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
-import Stats from '../components/Stats';
-import ChatbotMock from '../components/ChatbotMock';
+import Features from '../components/Features';
 
 export default function Home(){
   return (
     <div>
       <Helmet>
-        <title>VIGUX — We made, You Grow!!</title>
-        <meta name="description" content="VIGUX — AI Smart Glasses blending AR, VR and ML for accessibility and healthcare innovation." />
-        <meta name="keywords" content="AI Smart Glasses, Accessibility Technology, AR for Deaf, VIGUX, Healthcare Innovation" />
-        <meta property="og:title" content="VIGUX — We made, You Grow!!" />
+        <title>VIGUX — Empowering Independence Through Technology</title>
+        <meta name="description" content="VIGUX is a technology company building AR/VR and AI-powered solutions to empower individuals with disabilities." />
       </Helmet>
 
       <Hero />
-      <Stats />
-      <section id="technology" className="mt-12">
-        <h2 className="text-2xl font-bold">Technology</h2>
-        <p className="text-slate-700 dark:text-slate-900 mt-2">We combine AR, VR and Machine Learning to deliver perceptual augmentation and accessibility-first UX.</p>
+      <Features />
+
+      <section className="py-24">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Our Mission
+            </h2>
+            <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+              To build a more inclusive world by creating innovative and affordable technology that empowers individuals with disabilities to live more independent and fulfilling lives.
+            </p>
+          </div>
+        </div>
       </section>
-      <ChatbotMock />
+
+      <section className="bg-primary text-white">
+        <div className="container mx-auto px-6 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div>
+              <p className="text-5xl font-extrabold">680M+</p>
+              <p className="mt-2 text-lg font-medium">People with disabilities worldwide</p>
+            </div>
+            <div>
+              <p className="text-5xl font-extrabold">40%</p>
+              <p className="mt-2 text-lg font-medium">Reduction in workplace discrimination</p>
+            </div>
+            <div>
+              <p className="text-5xl font-extrabold">30%</p>
+              <p className="mt-2 text-lg font-medium">Improvement in city accessibility</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
