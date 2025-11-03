@@ -28,7 +28,10 @@ export default function Hero() {
       <div ref={ref} className="container mx-auto px-6 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         {/* centered page heading row */}
         <motion.div initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="md:col-span-12 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight">Vision Ultra Goggles Coming Soon</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight">
+            <span className="block">Vision Ultra Goggles</span>
+            <span className="block">Coming Soon</span>
+          </h1>
         </motion.div>
 
         {/* left column - copy */}

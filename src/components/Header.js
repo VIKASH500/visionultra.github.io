@@ -50,7 +50,7 @@ export default function Header() {
           <img
             src={visionultraLogo}
             alt="VIGUX Logo"
-            className="w-10 h-10 object-contain transition-transform group-hover:scale-105"
+            className="w-10 h-10 object-contain transition-transform hover:scale-105"
             loading="eager"
             width="40"
             height="40"
