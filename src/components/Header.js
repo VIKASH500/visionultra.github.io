@@ -45,28 +45,24 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between relative">
         <MenuIcon isOpen={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)} />
 
+        {/* logo on the left (site name moved to left side) */}
+        <Link to="/" className="flex items-center gap-3 mr-4">
+          <img
+            src={visionultraLogo}
+            alt="VIGUX Logo"
+            className="w-10 h-10 object-contain transition-transform group-hover:scale-105"
+            loading="eager"
+            width="40"
+            height="40"
+          />
+          <div className="text-slate-900 dark:text-white font-semibold text-lg">VIGUX</div>
+        </Link>
+
         {/* left nav - will align left */}
-        <div className="hidden md:flex items-center gap-4 flex-1">
+        <div className="hidden md:flex items-center gap-4">
           <NavItem to="/">Home</NavItem>
           <NavItem to="/about">About</NavItem>
           <NavItem to="/technology">Technology</NavItem>
-        </div>
-
-        {/* center - logo */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center gap-3">
-          <Link to="/" className="flex items-center gap-3 group">
-            <img 
-              src={visionultraLogo} 
-              alt="VisionUltra Logo"
-              className="w-10 h-10 object-contain transition-transform group-hover:scale-105"
-              loading="eager"
-              width="40"
-              height="40"
-            />
-            <div>
-              <div className="text-slate-900 dark:text-white font-semibold text-lg">VisionUltra</div>
-            </div>
-          </Link>
         </div>
 
         {/* right nav - login/signup + theme */}

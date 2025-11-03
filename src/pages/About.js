@@ -6,12 +6,12 @@ export default function About(){
   return (
     <div className="space-y-6">
       <Helmet>
-        <title>About — VisionUltra</title>
-        <meta name="description" content="About VisionUltra — mission, vision, team and timeline for our accessibility-first AR/VR wearable." />
+        <title>About — VIGUX</title>
+        <meta name="description" content="About VIGUX — mission, vision, team and timeline for our accessibility-first AR/VR wearable." />
       </Helmet>
 
       <div>
-        <h1 className="text-3xl font-bold">About VisionUltra</h1>
+  <h1 className="text-3xl font-bold">About VIGUX</h1>
         <p className="text-slate-300 mt-2">Mission: Use technology to deliver equal access and independence for all.</p>
       </div>
 

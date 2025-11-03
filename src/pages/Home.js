@@ -8,10 +8,10 @@ export default function Home(){
   return (
     <div>
       <Helmet>
-        <title>VisionUltra — We made, You Grow!!</title>
-        <meta name="description" content="VisionUltra — AI Smart Glasses blending AR, VR and ML for accessibility and healthcare innovation." />
-        <meta name="keywords" content="AI Smart Glasses, Accessibility Technology, AR for Deaf, VisionUltra, Healthcare Innovation" />
-        <meta property="og:title" content="VisionUltra — We made, You Grow!!" />
+        <title>VIGUX — We made, You Grow!!</title>
+        <meta name="description" content="VIGUX — AI Smart Glasses blending AR, VR and ML for accessibility and healthcare innovation." />
+        <meta name="keywords" content="AI Smart Glasses, Accessibility Technology, AR for Deaf, VIGUX, Healthcare Innovation" />
+        <meta property="og:title" content="VIGUX — We made, You Grow!!" />
       </Helmet>
 
       <Hero />

@@ -26,9 +26,13 @@ export default function Hero() {
       </div>
 
       <div ref={ref} className="container mx-auto px-6 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        {/* centered page heading row */}
+        <motion.div initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="md:col-span-12 text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight">Vision Ultra Goggles Coming Soon</h1>
+        </motion.div>
+
         {/* left column - copy */}
         <motion.div initial={{ x: -30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.7 }} className="md:col-span-6 lg:col-span-7">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight">VisionUltra — Intelligent glasses that extend your world.</h1>
           <p className="mt-6 text-lg md:text-xl text-slate-600 max-w-prose">A seamless blend of style, privacy and advanced AI to help people connect, perceive and move through the world with new confidence.</p>
           <div className="mt-8 flex flex-wrap gap-4 items-center">
             <motion.a whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} href="#technology" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-[var(--meta-blue)] text-white text-sm font-medium shadow">Buy now</motion.a>
