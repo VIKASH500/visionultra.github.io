@@ -22,6 +22,7 @@ export default function Hero() {
             <span className="block">Empowering Independence</span>
             <span className="block text-accent">Through Technology</span>
           </h1>
+          <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-white">Coming Soon</h2>
           <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
             Vision AI Goggles integrate AR, VR, and AI to facilitate communication and navigation for people with hearing, speech, and visual impairments.
           </p>

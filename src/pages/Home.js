@@ -16,7 +16,7 @@ export default function Home(){
   return (
     <div>
       <Helmet>
-        <title>VIGUX — Vision Ultra Goggles<br>Coming Soon</br></title>
+        <title>VIGUX — Vision Ultra Goggles Coming Soon</title>
         <meta name="description" content="VIGUX is a technology company building AR/VR and AI-powered solutions to empower individuals with disabilities." />
       </Helmet>
 
