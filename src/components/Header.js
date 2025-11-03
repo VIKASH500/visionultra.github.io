@@ -46,6 +46,8 @@ export default function Header() {
             <NavItem to="/technology">Technology</NavItem>
             <NavItem to="/impact">Impact</NavItem>
             <NavItem to="/contact">Contact</NavItem>
+            <NavItem to="/pricing">Pricing</NavItem>
+            <NavItem to="/demo">Demo</NavItem>
           </div>
 
           <div className="hidden md:flex items-center gap-4">
@@ -77,6 +79,8 @@ export default function Header() {
               <NavItem to="/technology">Technology</NavItem>
               <NavItem to="/impact">Impact</NavItem>
               <NavItem to="/contact">Contact</NavItem>
+              <NavItem to="/pricing">Pricing</NavItem>
+              <NavItem to="/demo">Demo</NavItem>
               <div className="border-t border-slate-200 pt-4 mt-4 flex items-center gap-4">
                 <Link to="/login" className="text-sm font-medium text-slate-700 hover:text-primary">Login</Link>
                 <Link to="/signup" className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-opacity-90">
