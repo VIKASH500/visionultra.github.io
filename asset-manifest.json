@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/visionultra.github.io/static/css/main.df521e83.css",
-    "main.js": "/visionultra.github.io/static/js/main.ff832a10.js",
+    "main.js": "/visionultra.github.io/static/js/main.6c46f2eb.js",
     "static/js/453.3c453210.chunk.js": "/visionultra.github.io/static/js/453.3c453210.chunk.js",
     "static/media/visionultra.jpg": "/visionultra.github.io/static/media/visionultra.9a1c84149e3eeb181b92.jpg",
     "index.html": "/visionultra.github.io/index.html",
     "main.df521e83.css.map": "/visionultra.github.io/static/css/main.df521e83.css.map",
-    "main.ff832a10.js.map": "/visionultra.github.io/static/js/main.ff832a10.js.map",
+    "main.6c46f2eb.js.map": "/visionultra.github.io/static/js/main.6c46f2eb.js.map",
     "453.3c453210.chunk.js.map": "/visionultra.github.io/static/js/453.3c453210.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df521e83.css",
-    "static/js/main.ff832a10.js"
+    "static/js/main.6c46f2eb.js"
   ]
 }
