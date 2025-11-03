@@ -14,14 +14,17 @@ export default function Technology(){
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="glass p-4 rounded">
+          <img src="https://via.placeholder.com/300x200.png?text=Speech+to+Text" alt="Speech to text" className="w-full h-auto rounded-t-lg"/>
           <h3 className="font-semibold">Speech-to-Text</h3>
           <p className="text-sm text-slate-600 dark:text-slate-900 mt-2">Low-latency transcription shown in the user's field of view.</p>
         </div>
         <div className="glass p-4 rounded">
+          <img src="https://via.placeholder.com/300x200.png?text=Sign+Recognition" alt="Sign recognition" className="w-full h-auto rounded-t-lg"/>
           <h3 className="font-semibold">Sign Recognition</h3>
           <p className="text-sm text-slate-600 dark:text-slate-900 mt-2">Real-time sign language recognition converted to audio or text.</p>
         </div>
         <div className="glass p-4 rounded">
+          <img src="https://via.placeholder.com/300x200.png?text=Augmented+Perception" alt="Augmented perception" className="w-full h-auto rounded-t-lg"/>
           <h3 className="font-semibold">Augmented Perception</h3>
           <p className="text-sm text-slate-600 dark:text-slate-900 mt-2">Contextual object detection and navigation cues for blind users.</p>
         </div>
