@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/visionultra.github.io/static/css/main.14692d1f.css",
-    "main.js": "/visionultra.github.io/static/js/main.7b56ab42.js",
+    "main.css": "/visionultra.github.io/static/css/main.1be53a9c.css",
+    "main.js": "/visionultra.github.io/static/js/main.08559893.js",
     "static/js/453.3c453210.chunk.js": "/visionultra.github.io/static/js/453.3c453210.chunk.js",
     "static/media/visionultra.jpg": "/visionultra.github.io/static/media/visionultra.9a1c84149e3eeb181b92.jpg",
     "index.html": "/visionultra.github.io/index.html",
-    "main.14692d1f.css.map": "/visionultra.github.io/static/css/main.14692d1f.css.map",
-    "main.7b56ab42.js.map": "/visionultra.github.io/static/js/main.7b56ab42.js.map",
+    "main.1be53a9c.css.map": "/visionultra.github.io/static/css/main.1be53a9c.css.map",
+    "main.08559893.js.map": "/visionultra.github.io/static/js/main.08559893.js.map",
     "453.3c453210.chunk.js.map": "/visionultra.github.io/static/js/453.3c453210.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14692d1f.css",
-    "static/js/main.7b56ab42.js"
+    "static/css/main.1be53a9c.css",
+    "static/js/main.08559893.js"
   ]
 }
