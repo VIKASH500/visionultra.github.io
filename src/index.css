@@ -44,7 +44,7 @@ body {
 .dark body {
   /* use a deep bluish black gradient in dark */
   background: linear-gradient(180deg, #030416 0%, #071029 100%);
-  color: #e6eef8;
+  color: #1e293b;
 }
 
 /* Typography scale - Meta/Ray-Ban Display style */

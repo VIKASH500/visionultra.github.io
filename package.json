@@ -2,7 +2,7 @@
   "name": "visionultra",
   "version": "0.1.0",
   "private": true,
-    "homepage": "https://vikash500.github.io/visionultra.github.io",
+    "homepage": "https://vikash500.github.io/visionultra.github.io/",
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@testing-library/dom": "^10.4.1",

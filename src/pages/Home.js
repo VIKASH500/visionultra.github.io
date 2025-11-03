@@ -18,7 +18,7 @@ export default function Home(){
       <Stats />
       <section id="technology" className="mt-12">
         <h2 className="text-2xl font-bold">Technology</h2>
-        <p className="text-slate-300 mt-2">We combine AR, VR and Machine Learning to deliver perceptual augmentation and accessibility-first UX.</p>
+        <p className="text-slate-700 dark:text-slate-900 mt-2">We combine AR, VR and Machine Learning to deliver perceptual augmentation and accessibility-first UX.</p>
       </section>
       <ChatbotMock />
     </div>

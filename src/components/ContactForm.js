@@ -16,9 +16,9 @@ export default function ContactForm(){
 
   return (
     <form onSubmit={submit} className="glass p-6 rounded-lg space-y-4">
-      <label className="block"><span className="text-sm text-slate-300">Name</span><input required name="name" value={values.name} onChange={handle} className="mt-1 w-full px-3 py-2 rounded bg-transparent border border-white/6"/></label>
-      <label className="block"><span className="text-sm text-slate-300">Email</span><input required name="email" type="email" value={values.email} onChange={handle} className="mt-1 w-full px-3 py-2 rounded bg-transparent border border-white/6"/></label>
-      <label className="block"><span className="text-sm text-slate-300">Message</span><textarea required name="message" value={values.message} onChange={handle} rows={4} className="mt-1 w-full px-3 py-2 rounded bg-transparent border border-white/6"></textarea></label>
+      <label className="block"><span className="text-sm text-slate-700 dark:text-slate-300">Name</span><input required name="name" value={values.name} onChange={handle} className="mt-1 w-full px-3 py-2 rounded bg-transparent border border-white/6"/></label>
+      <label className="block"><span className="text-sm text-slate-700 dark:text-slate-300">Email</span><input required name="email" type="email" value={values.email} onChange={handle} className="mt-1 w-full px-3 py-2 rounded bg-transparent border border-white/6"/></label>
+      <label className="block"><span className="text-sm text-slate-700 dark:text-slate-300">Message</span><textarea required name="message" value={values.message} onChange={handle} rows={4} className="mt-1 w-full px-3 py-2 rounded bg-transparent border border-white/6"></textarea></label>
       <div className="text-right"><button type="submit" className="px-4 py-2 bg-indigo-600 rounded">Send Message</button></div>
     </form>
   )

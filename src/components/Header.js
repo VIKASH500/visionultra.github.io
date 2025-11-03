@@ -12,9 +12,9 @@ const MenuIcon = ({ isOpen, onClick }) => (
     aria-expanded={isOpen}
   >
     <div className="w-6 h-5 flex flex-col justify-between">
-      <span className={`block h-0.5 w-6 bg-slate-600 dark:bg-slate-300 transition-transform ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
-      <span className={`block h-0.5 w-6 bg-slate-600 dark:bg-slate-300 transition-opacity ${isOpen ? 'opacity-0' : ''}`} />
-      <span className={`block h-0.5 w-6 bg-slate-600 dark:bg-slate-300 transition-transform ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+      <span className={`block h-0.5 w-6 bg-slate-600 dark:bg-slate-600 transition-transform ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
+      <span className={`block h-0.5 w-6 bg-slate-600 dark:bg-slate-600 transition-opacity ${isOpen ? 'opacity-0' : ''}`} />
+      <span className={`block h-0.5 w-6 bg-slate-600 dark:bg-slate-600 transition-transform ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
     </div>
   </button>
 );
@@ -23,7 +23,7 @@ const NavItem = ({ to, children }) => (
   <NavLink
     to={to}
     className={({ isActive }) =>
-      `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-150 ${isActive ? 'text-slate-900 font-semibold' : 'text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'}`
+      `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-150 ${isActive ? 'text-slate-900 font-semibold' : 'text-slate-600 hover:text-slate-900 dark:text-slate-900 dark:hover:text-slate-700'}`
     }
     aria-current={({ isActive }) => (isActive ? 'page' : undefined)}
   >
@@ -55,7 +55,7 @@ export default function Header() {
             width="40"
             height="40"
           />
-          <div className="text-slate-900 dark:text-white font-semibold text-lg">VIGUX</div>
+          <div className="text-slate-900 dark:text-slate-900 font-semibold text-lg">VIGUX</div>
         </Link>
 
         {/* left nav - will align left */}
@@ -95,7 +95,7 @@ export default function Header() {
               <NavItem to="/login">Login</NavItem>
               <NavItem to="/signup">Sign Up</NavItem>
               <div className="mt-2 flex items-center gap-2">
-                <span className="text-sm text-slate-500">Theme:</span>
+                <span className="text-sm text-slate-900">Theme:</span>
                 <ThemeToggle />
               </div>
             </nav>

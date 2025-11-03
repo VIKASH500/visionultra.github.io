@@ -12,7 +12,7 @@ export default function About(){
 
       <div>
   <h1 className="text-3xl font-bold">About VIGUX</h1>
-        <p className="text-slate-300 mt-2">Mission: Use technology to deliver equal access and independence for all.</p>
+        <p className="text-slate-700 dark:text-slate-900 mt-2">Mission: Use technology to deliver equal access and independence for all.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -22,7 +22,7 @@ export default function About(){
 
       <div className="glass p-6 rounded-lg">
         <h3 className="font-semibold">Timeline</h3>
-        <ol className="mt-3 text-slate-300 list-decimal list-inside">
+        <ol className="mt-3 text-slate-700 dark:text-slate-900 list-decimal list-inside">
           <li>2021 — Company founded</li>
           <li>2022 — Prototype v1 and pilot studies</li>
           <li>2024 — Clinical partnerships and product refinement</li>
