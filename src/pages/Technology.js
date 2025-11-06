@@ -1,21 +1,24 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import DeafImage from '../assets/Deaf.png';
+import DumbImage from '../assets/Dumb.png';
+import BlindImage from '../assets/Blind.png';
 
 const features = [
   {
     name: 'Speech-to-Text',
     description: 'Our advanced speech-to-text engine provides real-time, low-latency transcription of spoken language. The text is displayed discreetly within the user\'s field of view, allowing for seamless conversation and comprehension in any environment.',
-    imageUrl: 'https://images.unsplash.com/photo-1593697821028-76658a485487?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+    imageUrl: DeafImage,
   },
   {
     name: 'Sign Recognition',
     description: 'Using a state-of-the-art on-device machine learning model, our goggles can recognize sign language in real-time and translate it into audible speech or text. This feature empowers the deaf and hard of hearing to communicate effortlessly with the world around them.',
-    imageUrl: 'https://images.unsplash.com/photo-1611705490935-5a8bce59a492?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+    imageUrl: DumbImage,
   },
   {
     name: 'Augmented Perception',
     description: 'For users with visual impairments, our augmented perception technology provides contextual object detection and navigation cues. The goggles identify objects in the environment and provide audio feedback, enhancing spatial awareness and safety.',
-    imageUrl: 'https://images.unsplash.com/photo-1526374965328-5f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+    imageUrl: BlindImage,
   },
 ];
 

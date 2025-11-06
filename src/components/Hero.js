@@ -20,8 +20,8 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight">
-            <span className="block">Empowering Independence</span>
-            <span className="block text-accent">Through Technology</span>
+            <span className="block">Enableing Disabilities</span>
+            <span className="block text-accent">Through VIGUX Goggles Technology</span>
           </h1>
           <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-white">Coming Soon</h2>
           <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
