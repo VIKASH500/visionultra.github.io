@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import VikashImage from '../assets/Vikash.png';
+import VikashImage from '../assets/Vikash.jpg';
 import ShabinImage from '../assets/Shabin.jpg';
 
 const team = [
