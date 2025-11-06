@@ -1,4 +1,5 @@
 import React from 'react';
+import BlindImage from '../assets/Blind.png';
 
 export default function NavigationAssistantSection() {
   return (
@@ -7,7 +8,7 @@ export default function NavigationAssistantSection() {
         <div className="md:flex md:items-center md:gap-12">
           <div className="md:w-1/2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=AI+Navigation+Assistant"
+              src={BlindImage}
               alt="AI Navigation Assistant"
               className="rounded-lg shadow-lg max-w-full h-auto"
             />

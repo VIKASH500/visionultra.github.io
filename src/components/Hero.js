@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import BackgroundImage from '../assets/Background Image.png';
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover"
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          src={BackgroundImage}
           alt="Abstract technology background"
         />
         <div className="absolute inset-0 bg-slate-900/60" aria-hidden="true" />

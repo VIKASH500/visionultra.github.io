@@ -1,4 +1,5 @@
 import React from 'react';
+import DumbImage from '../assets/Dumb.png';
 
 export default function SignLanguageSection() {
   return (
@@ -7,7 +8,7 @@ export default function SignLanguageSection() {
         <div className="md:flex md:items-center md:gap-12 flex-row-reverse">
           <div className="md:w-1/2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=Sign+Language+to+Speech"
+              src={DumbImage}
               alt="Sign Language to Speech"
               className="rounded-lg shadow-lg max-w-full h-auto"
             />

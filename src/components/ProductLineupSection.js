@@ -1,30 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import VU_AR_Image from '../assets/VU AR.png';
+import VU_Specplus_Image from '../assets/VU SpecPlus.png';
+import VU_Smart_Image from '../assets/VU Smart.png';
+import VisionUltra_Pro_Max_Image from '../assets/Vision ultra Pro Max.png';
 
 const products = [
   {
     name: 'VU AR',
     tagline: 'For the Deaf',
     description: 'Live captioning and visual aids.',
-    imageUrl: 'https://via.placeholder.com/300x200.png?text=VU+AR',
+    imageUrl: VU_AR_Image,
   },
   {
     name: 'VU Specplus',
     tagline: 'For the Mute',
     description: 'Sign language to speech conversion.',
-    imageUrl: 'https://via.placeholder.com/300x200.png?text=VU+Specplus',
+    imageUrl: VU_Specplus_Image,
   },
   {
     name: 'VU Smart',
     tagline: 'For the Blind',
     description: 'AI voice-guided navigation and alerts.',
-    imageUrl: 'https://via.placeholder.com/300x200.png?text=VU+Smart',
+    imageUrl: VU_Smart_Image,
   },
   {
     name: 'VisionUltra Pro Max',
     tagline: 'All-in-One Device',
     description: 'Combines all features for comprehensive support.',
-    imageUrl: 'https://via.placeholder.com/300x200.png?text=VisionUltra+Pro+Max',
+    imageUrl: VisionUltra_Pro_Max_Image,
   },
 ];
 

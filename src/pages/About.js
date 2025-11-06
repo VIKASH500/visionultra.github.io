@@ -33,12 +33,24 @@ export default function About() {
       </Helmet>
 
       <main className="py-24">
-        {/* Mission Section */}
+        {/* Vision Section */}
         <div className="text-center">
           <div className="container mx-auto px-6">
             <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
-              Our Mission
+              Our Vision
             </h1>
+            <p className="mt-6 max-w-3xl mx-auto text-xl text-slate-600">
+              To envision a world where technology eliminates barriers, fostering a society where every individual, regardless of their abilities, can communicate, navigate, and participate fully and independently.
+            </p>
+          </div>
+        </div>
+
+        {/* Mission Section */}
+        <div className="text-center mt-24">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
+              Our Mission
+            </h2>
             <p className="mt-6 max-w-3xl mx-auto text-xl text-slate-600">
               To build a more inclusive world by creating innovative and affordable technology that empowers individuals with disabilities to live more independent and fulfilling lives.
             </p>

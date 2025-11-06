@@ -1,4 +1,5 @@
 import React from 'react';
+import DeafImage from '../assets/Deaf.png';
 
 export default function LiveCaptioningSection() {
   return (
@@ -7,7 +8,7 @@ export default function LiveCaptioningSection() {
         <div className="md:flex md:items-center md:gap-12">
           <div className="md:w-1/2">
             <img
-              src="https://via.placeholder.com/600x400.png?text=Live+Captioning"
+              src={DeafImage}
               alt="Live Captioning"
               className="rounded-lg shadow-lg max-w-full h-auto"
             />

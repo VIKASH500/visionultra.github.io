@@ -1,4 +1,5 @@
 import React from 'react';
+import visionultraImage from '../assets/visionultra.jpg';
 
 export default function SolutionSection() {
   return (
@@ -12,7 +13,7 @@ export default function SolutionSection() {
         </p>
         <div className="mt-12 flex justify-center">
           <img
-            src="https://via.placeholder.com/600x400.png?text=VisionUltra+Goggles"
+            src={visionultraImage}
             alt="VisionUltra Goggles"
             className="rounded-lg shadow-lg max-w-full h-auto"
           />
