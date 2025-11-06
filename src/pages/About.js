@@ -1,17 +1,19 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import VikashImage from '../assets/Vikash.png';
+import ShabinImage from '../assets/Shabin.jpg';
 
 const team = [
   {
-    name: 'Vikas Rajendra',
+    name: 'Vikash Rajendra',
     role: 'CEO & Founder',
-    imageUrl: 'https://via.placeholder.com/150',
+    imageUrl: VikashImage,
     bio: 'Founder focused on product and partnerships — leading the research into accessible AR experiences.',
   },
   {
-    name: 'Charm Charles',
+    name: 'Sharbin Charles',
     role: 'Co-Founder',
-    imageUrl: 'https://via.placeholder.com/150',
+    imageUrl: ShabinImage,
     bio: 'Co-founder driving engineering and AI models for sign/speech recognition modules.',
   },
 ];
