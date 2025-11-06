@@ -1,18 +1,26 @@
 {
   "files": {
     "main.css": "/visionultra.github.io/static/css/main.0270bd21.css",
-    "main.js": "/visionultra.github.io/static/js/main.ced59071.js",
+    "main.js": "/visionultra.github.io/static/js/main.deb06d63.js",
     "static/js/453.3c453210.chunk.js": "/visionultra.github.io/static/js/453.3c453210.chunk.js",
-    "static/media/Vikash.png": "/visionultra.github.io/static/media/Vikash.e71d94ee727566dd1bfb.png",
+    "static/media/Blind.png": "/visionultra.github.io/static/media/Blind.37ec8429e6c20e83e45c.png",
+    "static/media/Dumb.png": "/visionultra.github.io/static/media/Dumb.2b32e979983f1ed187e9.png",
+    "static/media/Deaf.png": "/visionultra.github.io/static/media/Deaf.f9afbd570bbf38fab873.png",
+    "static/media/VU SpecPlus.png": "/visionultra.github.io/static/media/VU SpecPlus.64f89618411754ecd114.png",
+    "static/media/VU Smart.png": "/visionultra.github.io/static/media/VU Smart.cbb04534a535973c4b7d.png",
+    "static/media/VU AR.png": "/visionultra.github.io/static/media/VU AR.851762391c982554d73c.png",
+    "static/media/Background Image.png": "/visionultra.github.io/static/media/Background Image.6d2a8ed9f9b21af1c462.png",
+    "static/media/Vision ultra Pro Max.png": "/visionultra.github.io/static/media/Vision ultra Pro Max.18db3d563aa427779d1e.png",
+    "static/media/Vikash.jpg": "/visionultra.github.io/static/media/Vikash.6915fcb90893a0e2be53.jpg",
     "static/media/visionultra.jpg": "/visionultra.github.io/static/media/visionultra.9a1c84149e3eeb181b92.jpg",
     "static/media/Shabin.jpg": "/visionultra.github.io/static/media/Shabin.44b7fd1038d7de45b3e9.jpg",
     "index.html": "/visionultra.github.io/index.html",
     "main.0270bd21.css.map": "/visionultra.github.io/static/css/main.0270bd21.css.map",
-    "main.ced59071.js.map": "/visionultra.github.io/static/js/main.ced59071.js.map",
+    "main.deb06d63.js.map": "/visionultra.github.io/static/js/main.deb06d63.js.map",
     "453.3c453210.chunk.js.map": "/visionultra.github.io/static/js/453.3c453210.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0270bd21.css",
-    "static/js/main.ced59071.js"
+    "static/js/main.deb06d63.js"
   ]
 }
