@@ -74,13 +74,13 @@ export default function Header() {
             className="md:hidden bg-white border-t border-slate-200"
           >
             <div className="px-6 pt-2 pb-4 space-y-1">
-              <NavItem to="/">Home</NavItem>
-              <NavItem to="/about">About</NavItem>
-              <NavItem to="/technology">Technology</NavItem>
-              <NavItem to="/impact">Impact</NavItem>
-              <NavItem to="/contact">Contact</NavItem>
-              <NavItem to="/pricing">Pricing</NavItem>
-              <NavItem to="/demo">Demo</NavItem>
+              <NavItem to="/" className="block">Home</NavItem>
+              <NavItem to="/about" className="block">About</NavItem>
+              <NavItem to="/technology" className="block">Technology</NavItem>
+              <NavItem to="/impact" className="block">Impact</NavItem>
+              <NavItem to="/contact" className="block">Contact</NavItem>
+              <NavItem to="/pricing" className="block">Pricing</NavItem>
+              <NavItem to="/demo" className="block">Demo</NavItem>
               <div className="border-t border-slate-200 pt-4 mt-4 flex items-center gap-4">
                 <Link to="/login" className="text-sm font-medium text-slate-700 hover:text-primary">Login</Link>
                 <Link to="/signup" className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-opacity-90">

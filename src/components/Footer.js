@@ -10,18 +10,52 @@ export default function Footer() {
   return (
     <footer className="bg-slate-50">
       <div className="container mx-auto px-6 py-12">
-        <div className="md:flex md:items-center md:justify-between">
-          <div className="flex justify-center space-x-6 md:order-2">
-            {socialLinks.map((item) => (
-              <a key={item.name} href={item.href} className="text-slate-400 hover:text-slate-500">
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Column 1: About Us */}
+          <div>
+            <h3 className="text-lg font-semibold text-slate-900">About Us</h3>
+            <p className="mt-4 text-sm text-slate-600">
+              VIGUX is dedicated to empowering individuals with disabilities through innovative AR/VR and AI technologies.
+            </p>
           </div>
-          <div className="mt-8 md:mt-0 md:order-1">
-            <p className="text-center text-base text-slate-400">&copy; {new Date().getFullYear()} VIGUX. All rights reserved.</p>
+
+          {/* Column 2: Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold text-slate-900">Quick Links</h3>
+            <ul className="mt-4 space-y-2">
+              <li><Link to="/" className="text-sm text-slate-600 hover:text-primary">Home</Link></li>
+              <li><Link to="/about" className="text-sm text-slate-600 hover:text-primary">About</Link></li>
+              <li><Link to="/technology" className="text-sm text-slate-600 hover:text-primary">Technology</Link></li>
+              <li><Link to="/impact" className="text-sm text-slate-600 hover:text-primary">Impact</Link></li>
+              <li><Link to="/pricing" className="text-sm text-slate-600 hover:text-primary">Pricing</Link></li>
+              <li><Link to="/demo" className="text-sm text-slate-600 hover:text-primary">Demo</Link></li>
+            </ul>
           </div>
+
+          {/* Column 3: Contact Us */}
+          <div>
+            <h3 className="text-lg font-semibold text-slate-900">Contact Us</h3>
+            <ul className="mt-4 space-y-2">
+              <li><a href="mailto:visionultrainfo@gmail.com" className="text-sm text-slate-600 hover:text-primary">visionultrainfo@gmail.com</a></li>
+            </ul>
+          </div>
+
+          {/* Column 4: Social Links (Existing) */}
+          <div>
+            <h3 className="text-lg font-semibold text-slate-900">Follow Us</h3>
+            <div className="flex space-x-6 mt-4">
+              {socialLinks.map((item) => (
+                <a key={item.name} href={item.href} className="text-slate-400 hover:text-slate-500">
+                  <span className="sr-only">{item.name}</span>
+                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-slate-200 pt-8">
+          <p className="text-center text-base text-slate-400">&copy; {new Date().getFullYear()} VIGUX. All rights reserved.</p>
         </div>
       </div>
     </footer>
