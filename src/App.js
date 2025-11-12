@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Technology from './pages/Technology';
@@ -13,6 +13,16 @@ import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+  };
+
   return (
     <HashRouter>
       <ScrollToTop />
@@ -23,10 +33,13 @@ function App() {
           <Route path="/technology" element={<Technology />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/pricing" element={<Pricing />} />
-          <Route path="/demo" element={<Demo />} />
+          <Route
+            path="/demo"
+            element={isAuthenticated ? <Demo onLogout={handleLogout} /> : <Navigate to="/login" />}
+          />
         </Routes>
       </Layout>
     </HashRouter>
@@ -34,3 +47,4 @@ function App() {
 }
 
 export default App;
+

@@ -144,7 +144,7 @@ function ObjectRecognitionNavigationDemo() {
   );
 }
 
-export default function Demo() {
+export default function Demo({ onLogout }) {
   return (
     <div className="bg-white py-24">
       <Helmet>
@@ -153,6 +153,14 @@ export default function Demo() {
       </Helmet>
 
       <div className="container mx-auto px-6">
+        <div className="flex justify-end">
+          <button
+            onClick={onLogout}
+            className="px-4 py-2 bg-red-600 text-white rounded"
+          >
+            Logout
+          </button>
+        </div>
         <div className="text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
             Experience VisionUltra
