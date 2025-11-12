@@ -10,10 +10,12 @@ import Signup from './pages/Signup';
 import Pricing from './pages/Pricing';
 import Demo from './pages/Demo';
 import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
