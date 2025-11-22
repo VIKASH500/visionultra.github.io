@@ -11,6 +11,7 @@ import Pricing from './pages/Pricing';
 import Demo from './pages/Demo';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
+import Analytics from './components/Analytics';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <HashRouter>
+      <Analytics />
       <ScrollToTop />
       <Layout>
         <Routes>
