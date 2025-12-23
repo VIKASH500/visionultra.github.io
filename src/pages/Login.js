@@ -7,6 +7,7 @@ export default function Login({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const [asAdmin, setAsAdmin] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -15,7 +16,12 @@ export default function Login({ onLogin }) {
     // placeholder auth - replace with real API call
     if (email && password) {
       onLogin && onLogin();
-      navigate('/demo');
+      // set admin flag in localStorage for simple role gating
+      try {
+        localStorage.setItem('isAdmin', asAdmin ? 'true' : 'false');
+      } catch (err) {}
+      // navigate admin users to pricing page for convenience
+      if (asAdmin) navigate('/pricing'); else navigate('/demo');
     } else {
       setError('Please provide email and password.');
     }
@@ -78,6 +84,10 @@ export default function Login({ onLogin }) {
 
           <div className="flex items-center justify-between text-sm">
             <Link to="/forgot" className="text-purple-600 hover:underline">Forgot password?</Link>
+            <label className="ml-4 inline-flex items-center text-sm text-slate-600">
+              <input type="checkbox" className="mr-2" checked={asAdmin} onChange={(e) => setAsAdmin(e.target.checked)} />
+              Log in as Admin
+            </label>
           </div>
 
           {error && <div className="text-red-500 text-sm">{error}</div>}

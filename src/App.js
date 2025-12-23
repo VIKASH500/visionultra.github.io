@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Pricing from './pages/Pricing';
+import ProtectedRoute from './components/ProtectedRoute';
 import Demo from './pages/Demo';
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
@@ -37,7 +38,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/pricing" element={<ProtectedRoute><Pricing /></ProtectedRoute>} />
           <Route
             path="/demo"
             element={isAuthenticated ? <Demo onLogout={handleLogout} /> : <Navigate to="/login" />}
