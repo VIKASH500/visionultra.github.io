@@ -1,22 +1,99 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link, useNavigate } from 'react-router-dom';
+import AuthCard from '../components/AuthCard';
 
-export default function Signup(){
+export default function Signup() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirm, setConfirm] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!name || !email || !password) {
+      setError('Please fill all required fields.');
+      return;
+    }
+    if (password !== confirm) {
+      setError('Passwords do not match.');
+      return;
+    }
+    // placeholder - replace with API call
+    navigate('/login');
+  };
+
   return (
-    <div className="max-w-md mx-auto glass p-6 rounded-lg">
+    <>
       <Helmet>
-        <title>Sign Up — VisionUltra</title>
+        <title>Sign up — vigux.in</title>
       </Helmet>
-      <h1 className="text-2xl font-bold mb-4">Create account</h1>
-      <form className="space-y-4">
-        <label className="block"><span className="text-sm text-slate-700">Full name</span><input required className="mt-1 w-full px-3 py-2 rounded border"/></label>
-        <label className="block"><span className="text-sm text-slate-700">Email</span><input required type="email" className="mt-1 w-full px-3 py-2 rounded border"/></label>
-        <label className="block"><span className="text-sm text-slate-700">Password</span><input required type="password" className="mt-1 w-full px-3 py-2 rounded border"/></label>
-        <div className="flex items-center justify-between">
-          <button className="px-4 py-2 bg-indigo-600 text-slate-900 rounded">Create account</button>
-          <a href="/login" className="text-sm underline">Already have an account?</a>
-        </div>
-      </form>
-    </div>
-  )
+
+      <AuthCard
+        title="Sign up"
+        footer={(
+          <div>
+            Already have an account? <Link to="/login" className="text-purple-600 font-medium hover:underline">Log in</Link>
+          </div>
+        )}
+      >
+        <form className="space-y-4" onSubmit={handleSubmit} noValidate>
+          <label className="block text-sm">
+            <span className="text-gray-700">Full Name</span>
+            <input
+              type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="mt-2 w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-200"
+            />
+          </label>
+
+          <label className="block text-sm">
+            <span className="text-gray-700">Email address</span>
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="mt-2 w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-200"
+            />
+          </label>
+
+          <label className="block text-sm">
+            <span className="text-gray-700">Password</span>
+            <input
+              type="password"
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="mt-2 w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-200"
+            />
+          </label>
+
+          <label className="block text-sm">
+            <span className="text-gray-700">Confirm Password</span>
+            <input
+              type="password"
+              required
+              value={confirm}
+              onChange={(e) => setConfirm(e.target.value)}
+              className="mt-2 w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-200"
+            />
+          </label>
+
+          {error && <div className="text-red-500 text-sm">{error}</div>}
+
+          <button
+            type="submit"
+            className="mt-2 w-full bg-purple-600 hover:bg-purple-700 active:scale-95 text-white py-3 rounded-lg text-sm font-semibold transition"
+          >
+            Create account
+          </button>
+        </form>
+      </AuthCard>
+    </>
+  );
 }

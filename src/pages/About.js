@@ -8,21 +8,17 @@ const team = [
     name: 'Vikash Rajendra',
     role: 'CEO & Founder',
     imageUrl: VikashImage,
-    bio: 'Founder focused on product and partnerships — leading the research into accessible AR experiences.',
+    //bio: 'Founder focused on product and partnerships — leading the research into accessible AR experiences.',
   },
   {
     name: 'Sharbin Charles',
     role: 'Co-Founder',
     imageUrl: ShabinImage,
-    bio: 'Co-founder driving engineering and AI models for sign/speech recognition modules.',
+    //bio: 'Co-founder driving engineering and AI models for sign/speech recognition modules.',
   },
 ];
 
-const timeline = [
-  { year: 2021, event: 'Company founded' },
-  { year: 2022, event: 'Prototype v1 and pilot studies' },
-  { year: 2024, event: 'Clinical partnerships and product refinement' },
-];
+
 
 export default function About() {
   return (
@@ -79,40 +75,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Timeline Section */}
-        <div className="py-24">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl font-extrabold text-slate-900 text-center">Our Journey</h2>
-            <div className="mt-12 flow-root">
-              <ul className="-mb-8">
-                {timeline.map((item, itemIdx) => (
-                  <li key={item.year}>
-                    <div className="relative pb-8">
-                      {itemIdx !== timeline.length - 1 ? (
-                        <span className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-slate-200" aria-hidden="true" />
-                      ) : null}
-                      <div className="relative flex space-x-3">
-                        <div>
-                          <span className="h-8 w-8 rounded-full bg-primary flex items-center justify-center ring-8 ring-white">
-                            <svg className="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                            </svg>
-                          </span>
-                        </div>
-                        <div className="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
-                          <div>
-                            <p className="text-sm text-slate-500">__{item.year}__</p>
-                            <p className="font-medium text-slate-900">{item.event}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
+
       </main>
     </div>
   );
